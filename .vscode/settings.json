@@ -1,6 +1,3 @@
 {
-    "java.compile.nullAnalysis.mode": "disabled",
-    "files.exclude": {
-        "**/.git": false
-    }
+    "java.compile.nullAnalysis.mode": "disabled"
 }
