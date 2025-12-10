@@ -1,0 +1,12 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fefefe;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #def0df;
+}
