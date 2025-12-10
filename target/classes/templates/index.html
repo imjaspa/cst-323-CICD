@@ -7,6 +7,12 @@
     <link href="style.css" rel="stylesheet">
 <div class="container">
   <h1>Welcome to the comments application!</h1>
+
+  <form th:action="@{/searchComments}" method="get" style="margin-bottom: 20px;">
+    <label for="searchTerm" class="form-label">Search Comments</label>
+    <input type="text" id="searchTerm" name="searchTerm" placeholder="Search..." required />
+    <button type="submit" class="btn btn-secondary">Search</button>
+  </form>
   <!-- table of comments-->
    <table class="table">
   <thead>

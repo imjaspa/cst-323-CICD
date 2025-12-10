@@ -90,4 +90,19 @@ public class CommentsDAO {
         }
         return results;
     }
+
+    public List<AppComment> searchComments(String searchTerm) {
+        List<AppComment> results = new ArrayList<>();
+        String lower = searchTerm.toLowerCase();
+
+        for (AppComment comment : comments) {
+            if (comment.getContent().toLowerCase().contains(lower) ||
+                comment.getAuthor().toLowerCase().contains(lower)) {
+                results.add(comment);
+            }
+        }
+
+        return results;
+    }
+
 }
